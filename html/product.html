@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TecStore | Products</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+
+
+    <div id="navbar-placeholder"></div>
+
+<section class="products">
+  
+  <div class="product-card">
+    <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8" alt="Laptop">
+
+    <div class="product-info">
+      <h3>Gaming Laptop</h3>
+      <p>High performance laptop with RTX graphics for ultimate gaming.</p>
+      <div class="price">₹85,000</div>
+      <button>Buy Now</button>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img src="https://i.guim.co.uk/img/media/2ce8db064eabb9e22a69cc45a9b6d4e10d595f06/392_612_4171_2503/master/4171.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=45b5856ba8cd83e6656fbe5c166951a4" alt="Smartphones">
+
+    <div class="product-info">
+      <h3>Smartphone</h3>
+      <p>Latest Android smartphone with high-speed processor and AMOLED display.</p>
+      <div class="price">₹25,999</div>
+      <button>Buy Now</button>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MUW33_AV3?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1712255584873" alt="Headphones">
+
+    <div class="product-info">
+      <h3>Wireless Headphones</h3>
+      <p>Noise-cancelling headphones with 20 hours battery backup.</p>
+      <div class="price">₹4,499</div>
+      <button>Buy Now</button>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img src="https://m.media-amazon.com/images/I/71JU-bUt-sL.jpg" alt="Smartwatch">
+
+    <div class="product-info">
+      <h3>Smartwatch</h3>
+      <p>Stay fit with style! Heart-rate monitor and water resistant watch.</p>
+      <div class="price">₹3,999</div>
+      <button>Buy Now</button>
+    </div>
+  </div>
+
+</section>
+
+
+<script>
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar-placeholder').innerHTML = data;
+      });
+  </script>
+</body>
+</html>

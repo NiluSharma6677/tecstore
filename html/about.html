@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us | TecStore</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+
+    
+<div id="navbar-placeholder"></div>
+
+<section class="about-section">
+  <h2>About TecStore</h2>
+  <p>
+    Welcome to TecStore — your one-stop destination for the latest and greatest in technology! At TecStore, we believe technology should be accessible, reliable, and stylish. Since our inception, we have been committed to providing cutting-edge gadgets that make your life smarter and more convenient.
+  </p>
+  <p>
+    Our store is filled with handpicked laptops, smartphones, smartwatches, and more. We ensure that each product meets the highest standards of quality, innovation, and design.
+  </p>
+
+  <div class="mission-vision">
+    <div class="mission">
+      <h3>Our Mission</h3>
+      <p>
+        To deliver the finest tech products at unbeatable prices, backed by exceptional customer service. We aim to make the latest technology reachable for everyone.
+      </p>
+    </div>
+    <div class="vision">
+      <h3>Our Vision</h3>
+      <p>
+        To become the most trusted and loved technology brand globally, empowering every individual with the best of innovation and connectivity.
+      </p>
+    </div>
+  </div>
+
+</section>
+
+
+<script>
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar-placeholder').innerHTML = data;
+      });
+  </script>
+</body>
+</html>
+
